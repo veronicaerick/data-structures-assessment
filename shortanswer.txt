@@ -1,0 +1,80 @@
+Recursion
+
+In your own words, what is Recursion?
+The calling of a function from within that same function until the base case is met.
+
+Why is it necessary to have a Base Case?
+The base case is the solution to the most basic possible problem, like having a list of one item. A base case is needed to stop the recursion so the function stops before stack overflow happens aka infinate loop.
+
+
+
+Graphs
+
+What is a Graph?
+Graphs contain loops and can be either directed or undirected. Each node in a graph is connected by an edge.Graphs aren't heirarchical but describe relationships between things. 
+
+How is a Graph different from a Tree?
+Trees have distinct hierarchies and contain parent/child relationships. Graphs can be 
+undirected or directed. 
+
+Give an example of somthing that would be good to model with a Graph.
+A social network, facebook is the biggest example I can think of. 
+
+
+python list // add L: O(n)  have to reindex all items, so time depends on length of list
+python list // pop L: O(n)  same as above, have to renindex all items after you take first item
+python list // pop R: O(1)  can go straight to end, dont touch or handle any other index item so its constant
+ll // Index: O(n)  count all the way through the list until you find what you were looking for
+ll // Search: O(n)  check each node to see if the data matches what we are searching for
+ll add R: O(1)  if you keep track of the tail, you jump straight to it and assign what you're adding as the new tail 
+ll add L: O(1)  go to beggining as assign node you are adding as the head
+ll // pop L: O(1)  pop off the head and set the next item as the new head
+ll pop R: O(n)  different since you have to go through the entire list and find the second to last item, reassign it as the tail and set tail.next to NONE
+dll // Index: O(n)  have to go through the entire list looking for index
+dll // search: O(n)  check each node to see if data we want is present
+dll // add R: O(1) keep track of the tail, go straight to it and add to it
+dll // add L: O(1) keep track of the head, go there and reassign what you're adding as the head
+dll // pop L: O(1) pop off the head and set the sencond item as new head
+dll // pop R: O(1)  dll's can keep track the the prev. node, so we can go straight there and reassign that as the tail without having to traverse the whole list
+QA add R: O(1)  add item to the end, constant since we know the length
+QA pop L: O(n)  same as a list, have to reindex everything it popping from the front
+QLL add R: O(1)  if you're keeping track of the tail, update it, if not keeping track of the tail O(n)
+QLL pop L: O(1)  you know the head, so go update it
+Stack add R: O(1)  stacks are made to add to the end, can jump to end and add quickily
+Stack pop R:/deqeue O(1)  same as above but popping
+
+set Get // O(1)
+set Add // O(1)
+set Delete // O(1)
+set Iterate // O(n)
+set Memory // med
+BST Get // O(log n) if balanced
+BST Add // O(n) rebalance
+BST Delete // O(n) rebalance
+BST Iterate // O(1)
+BST Memory // low
+tree Get // O(n)
+tree Add // O(1)
+tree Delete // O(1)
+tree Iterate // O(n)
+tree Memory // low
+
+Sorting
+1. Describe in words how the Bubble Sort algorithm works.
+go through the list and compare each item to the next, and switch the larger item to the end of the list
+2. Describe in words how the Merge Sort algorithm works.
+break list items down into list items of 1, then rebuild the list as you sort lowest to highest, uses recursion
+3. Describe in words how the Quick Sort algorithm works.
+choose a random pivot and sort the smaller items to the beggining of the list,  and the larger items to the right, and choose another random pivot and repeat the process until you have a sorted list
+
+Git Branching
+
+1. Give an instance when you would use git branching.
+building a feature and want to keep it seperate from the master while you build. or teams of engineers can have own brances so can work solo on a feature
+2. What is a pull request?
+when you request that someone pull your code into their master branch. 
+
+
+
+
+
